@@ -14,10 +14,10 @@ tuple_to_sort = (
 
 
 print(sorted(tuple_to_sort, key=lambda x: x[0]))
-[('aaa', 1), ('bla', 3), ('boo', 2), ('foo', 2)]
+# [('aaa', 1), ('bla', 3), ('boo', 2), ('foo', 2)]
 
 print(sorted(tuple_to_sort, key=lambda x: x[1]))
-[('aaa', 1), ('foo', 2), ('boo', 2), ('bla', 3)]
+# [('aaa', 1), ('foo', 2), ('boo', 2), ('bla', 3)]
 
 
 def my_compare(x, y):
@@ -29,3 +29,4 @@ def my_compare(x, y):
 
 
 print(sorted(tuple_to_sort, key=cmp_to_key(my_compare)))
+# [('boo', 2), ('foo', 2), ('aaa', 1), ('bla', 3)]
